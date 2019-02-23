@@ -1,3 +1,111 @@
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /*
+  transition-property: Qué quieres cambiar
+  transition-duration: Cuánto va durar
+  transition-delay: Cuánto va demorar en ejecutar
+  transition-timing-function: ease --> Por defecto
+  */
+  transition-duration: 1s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pelota.a {
+  background-color: red;
+  left: 0;
+  color: red;
+}
+
+.pelota.b {
+  background-color: blue;
+  right: 0;
+  color: blue;
+}
+
+.canasta {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.todo:hover .pelota {
+  color: white;
+}
+
+.todo:hover .pelota.a.uno {
+  left: calc(50% - 100px);
+}
+
+.todo:hover .pelota.b.uno {
+  right: calc(50% - 100px);
+}
+
+.todo:hover .pelota.a.dos {
+  left: calc(50% - 100px);
+  transition-delay: 333ms;
+}
+
+.todo:hover .pelota.b.dos {
+  right: calc(50% - 100px);
+  transition-delay: 333ms;
+}
+
+.todo:hover .pelota.a.tres {
+  left: calc(50% - 100px);
+  transition-delay: 666ms;
+}
+
+.todo:hover .pelota.b.tres {
+  right: calc(50% - 100px);
+  transition-delay: 666ms;
+}
+
+.todo:hover .pelota.a.cuatro {
+  left: calc(50% - 100px);
+  transition-delay: 1s;
+}
+
+.todo:hover .pelota.b.cuatro {
+  right: calc(50% - 100px);
+  transition-delay: 1s;
+}
+
+.todo:hover .pelota.a.cinco {
+  left: calc(50% - 100px);
+  transition-delay: 1333ms;
+}
+
+.todo:hover .pelota.b.cinco {
+  right: calc(50% - 100px);
+  transition-delay: 1333ms;
+}
+
+.todo:hover .pelota.a.seis {
+  left: calc(50% - 100px);
+  transition-delay: 1666ms;
+}
+
+.todo:hover .pelota.b.seis {
+  right: calc(50% - 100px);
+  transition-delay: 1666ms;
+}
+
+.todo:hover .pelota.a.siete {
+  left: calc(50% - 100px);
+  transition-delay: 2s;
+}
+
+.todo:hover .pelota.b.siete {
+  right: calc(50% - 100px);
+  transition-delay: 2s;
+}
+
 body {
   margin: 0;
+  height: 100vh;
 }
