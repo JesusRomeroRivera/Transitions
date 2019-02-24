@@ -31,81 +31,42 @@
   position: relative;
   height: 100px;
   width: 100%;
+  /*
+    transform: rotar - sesgar - posición - tamaño;
+  */
+  transform: rotate(5deg) skew(10deg) translate(100px) scale(1.5);
+  /*
+    transform: rotate3d(X , Y , Z, 45deq);
+    transform: translate3d(Xpx , Ypx , Zpx);
+    transform: translate() - Mover el objeto
+    perspective: px;
+    perspective-origin: x y;
+    perspective-origin: top; -De qué lado ver -
+    (Se pueden usar dos lados)
+    transform: trasnlateX - Y - Z
+    Los conceptos de 3d  se aplican para todos los transform
+    transform: scale(x , y);
+    transform: skew(x , y);
+  */
+
 }
 
-.todo:hover .pelota {
+.canasta:hover .pelota {
   color: white;
 }
 
-.todo:hover .pelota.a.uno {
+.canasta:hover .pelota.a.uno {
   left: calc(50% - 100px);
 }
 
-.todo:hover .pelota.b.uno {
+.canasta:hover .pelota.b.uno {
   right: calc(50% - 100px);
-}
-
-.todo:hover .pelota.a.dos {
-  left: calc(50% - 100px);
-  transition-delay: 333ms;
-}
-
-.todo:hover .pelota.b.dos {
-  right: calc(50% - 100px);
-  transition-delay: 333ms;
-}
-
-.todo:hover .pelota.a.tres {
-  left: calc(50% - 100px);
-  transition-delay: 666ms;
-}
-
-.todo:hover .pelota.b.tres {
-  right: calc(50% - 100px);
-  transition-delay: 666ms;
-}
-
-.todo:hover .pelota.a.cuatro {
-  left: calc(50% - 100px);
-  transition-delay: 1s;
-}
-
-.todo:hover .pelota.b.cuatro {
-  right: calc(50% - 100px);
-  transition-delay: 1s;
-}
-
-.todo:hover .pelota.a.cinco {
-  left: calc(50% - 100px);
-  transition-delay: 1333ms;
-}
-
-.todo:hover .pelota.b.cinco {
-  right: calc(50% - 100px);
-  transition-delay: 1333ms;
-}
-
-.todo:hover .pelota.a.seis {
-  left: calc(50% - 100px);
-  transition-delay: 1666ms;
-}
-
-.todo:hover .pelota.b.seis {
-  right: calc(50% - 100px);
-  transition-delay: 1666ms;
-}
-
-.todo:hover .pelota.a.siete {
-  left: calc(50% - 100px);
-  transition-delay: 2s;
-}
-
-.todo:hover .pelota.b.siete {
-  right: calc(50% - 100px);
-  transition-delay: 2s;
 }
 
 body {
   margin: 0;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
