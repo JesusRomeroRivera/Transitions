@@ -46,18 +46,17 @@
     transform: scale(x , y);
     transform: skew(x , y);
   */
-
 }
 
 .canasta:hover .pelota {
   color: white;
 }
 
-.canasta:hover .pelota.a.uno {
+.canasta:hover .pelota.a {
   left: calc(50% - 100px);
 }
 
-.canasta:hover .pelota.b.uno {
+.canasta:hover .pelota.b {
   right: calc(50% - 100px);
 }
 /*
@@ -100,10 +99,47 @@
   }
 */
 
+.pelota.c {
+  background-color: green;
+  position: absolute;
+  animation-name: movimiento , rebote;
+  animation-duration: 3s , 0.3s;
+  animation-timing-function: linear,ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: calc(100% - 100px);
+  }
+}
+
+@keyframes rebote {
+  from {
+    top: 0;
+    transform: scaleY(1);
+  }
+
+  to {
+    top: 100px;
+    transform: scaleY(.8);
+  }
+}
+
+.pelota.c:hover {
+  animation-play-state: paused;
+}
+
 body {
   margin: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
