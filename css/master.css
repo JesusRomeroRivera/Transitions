@@ -33,9 +33,7 @@
   width: 100%;
   /*
     transform: rotar - sesgar - posición - tamaño;
-  */
-  transform: rotate(5deg) skew(10deg) translate(100px) scale(1.5);
-  /*
+    transform: rotate(5deg) skew(10deg) translate(100px) scale(1.5);
     transform: rotate3d(X , Y , Z, 45deq);
     transform: translate3d(Xpx , Ypx , Zpx);
     transform: translate() - Mover el objeto
@@ -62,6 +60,45 @@
 .canasta:hover .pelota.b.uno {
   right: calc(50% - 100px);
 }
+/*
+  .cuadrado{
+    Nombramos la animación a ejecutar
+      animation-name: cuadrado;
+    Duración de la animación
+      animation-duration: 1s;
+    Tiempo de retardo de la animación
+      animation-delay: 1s;
+    Cuantas veces va a ocurrir la animación
+      animation-iteration-count: 2;
+      animation-iteration-count: infinite;
+    Indica el ritmo de la animación,
+      animation-timing-function: ease;
+      animation-timing-function: ease-in;
+      animation-timing-function: ease-in-out;
+      animation-timing-function: linear;
+      animation-timing-function: cubic-bezier(1, 1, 1, 1);
+    Indica si la animación debe retroceder al inicio o empezar desde el inicio
+      animation-direction: reverse;
+      animation-direction: alternate;
+    Como quiero que se vea mi elemento cuando acabe animación
+      animation-fill-mode: forwards;
+    Controlamos el estado de la animación. Por defecto tiene running
+      animation-play-state: running;
+      animation-play-state: paused;
+  }
+  CONFIGURANDO ANIMACIÓN
+    @keyframes nombre_de_animación
+  @keyframes cuadrado {
+    Estado inicial de animación
+    0%{
+      opacity: 1;
+    }
+      Estado final de la animación
+    100%{
+      opacity: 0;
+    }
+  }
+*/
 
 body {
   margin: 0;
